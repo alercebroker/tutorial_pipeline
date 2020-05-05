@@ -6,19 +6,19 @@ services:
       - "../ztf_sample:/app/tests"
     network_mode: host
     environment:
-      - DB_HOST=localhost
-      - DB_USER=postgres
-      - DB_PASSWORD=docker
-      - DB_PORT=5432
-      - DB_NAME=test
+      - DB_HOST=
+      - DB_USER=
+      - DB_PASSWORD=
+      - DB_PORT=
+      - DB_NAME=
       - CONSUMER_TOPICS=
       - CONSUMER_SERVER=
       - CONSUMER_GROUP_ID=
-      - AVRO_PATH=/app/tests
-      - PRODUCER_TOPIC=correction
-      - PRODUCER_SERVER=localhost:9092
-      - ES_PREFIX=tutorial
-      - ES_NETWORK_HOST=localhost
-      - ES_NETWORK_PORT=9200
+      - AVRO_PATH=
+      - PRODUCER_TOPIC=
+      - PRODUCER_SERVER=
+      - ES_PREFIX=
+      - ES_NETWORK_HOST=
+      - ES_NETWORK_PORT=
       - LOGGING_DEBUG=True
       - N_PROCESS=1

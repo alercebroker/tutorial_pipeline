@@ -4,17 +4,17 @@ services:
     image: 'docker.pkg.github.com/alercebroker/tutorial_pipeline/features:latest'
     network_mode: host
     environment:
-      - CONSUMER_TOPICS=correction
-      - CONSUMER_SERVER=localhost:9092
-      - CONSUMER_GROUP_ID=features
-      - PRODUCER_TOPIC=features
-      - PRODUCER_SERVER=localhost:9092
+      - CONSUMER_TOPICS=
+      - CONSUMER_SERVER=
+      - CONSUMER_GROUP_ID=
+      - PRODUCER_TOPIC=
+      - PRODUCER_SERVER=
       - LOGGING_DEBUG=True
-      - ES_PREFIX=tutorial
-      - ES_NETWORK_HOST=localhost
-      - ES_NETWORK_PORT=9200
-      - DB_HOST=localhost
-      - DB_USER=postgres
-      - DB_PASSWORD=docker
-      - DB_PORT=5432
-      - DB_NAME=test
+      - ES_PREFIX=
+      - ES_NETWORK_HOST=
+      - ES_NETWORK_PORT=
+      - DB_HOST=
+      - DB_USER=
+      - DB_PASSWORD=
+      - DB_PORT=
+      - DB_NAME=
